@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "0d430ada-cf62-41da-9ce9-ee4a58c450eb",
+		"name": "Redis Bull",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39789209"
+	},
+	"item": [
+		{
+			"name": "Crear order de drink exitosa.",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": \"1\",\r\n    \"drinkType\": \"cosmic_punch\",\r\n    \"quantity\": 2,\r\n    \"status\": \"pending\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/order-drink",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"order-drink"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear order de drink exitosa. Solar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": \"4\",\r\n    \"drinkType\": \"solar_blast\",\r\n    \"quantity\": 3,\r\n    \"status\": \"pending\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/order-drink",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"order-drink"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear order de drink lunar_berry.",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": \"6\",\r\n    \"drinkType\": \"lunar_berry\",\r\n    \"quantity\": 1,\r\n    \"status\": \"pending\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/order-drink",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"order-drink"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear orderdrink con insuficientes ingredientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": \"2\",\r\n    \"drinkType\": \"cosmic_punch\",\r\n    \"quantity\": 200,\r\n    \"status\": \"pending\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/order-drink",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"order-drink"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

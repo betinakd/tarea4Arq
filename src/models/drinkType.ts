@@ -1,0 +1,1 @@
+export type DrinkType = 'cosmic_punch' | 'lunar_berry' | 'solar_blast';
